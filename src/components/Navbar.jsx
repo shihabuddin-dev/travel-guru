@@ -6,15 +6,15 @@ import { NavLink } from "react-router";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const links = <>
-        <NavLink className="hover:text-yellow-400">News</NavLink>
-        <NavLink className="hover:text-yellow-400">Destination</NavLink>
-        <NavLink className="hover:text-yellow-400">Blog</NavLink>
-        <NavLink className="hover:text-yellow-400">Contact</NavLink>
+        <NavLink to='/news' className="hover:text-yellow-400">News</NavLink>
+        <NavLink to='/destination' className="hover:text-yellow-400">Destination</NavLink>
+        <NavLink to='/blogs' className="hover:text-yellow-400">Blogs</NavLink>
+        <NavLink to='/contact' className="hover:text-yellow-400">Contact</NavLink>
     </>
 
     return (
-        <nav className="w-full bg-black/50 text-white">
-            <div className="w-11/12 mx-auto px-4 py-3 flex items-center justify-center gap-12">
+        <nav className="w-full text-white">
+            <div className="w-11/12 mx-auto px-4 py-3 flex items-center justify-center gap-36 md:gap-12">
                 {/* Logo */}
                 <div >
                     <img src={logo} alt="Logo" className="w-24" />

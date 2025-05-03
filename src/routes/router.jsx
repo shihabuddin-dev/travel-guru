@@ -1,43 +1,39 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../layout/Root";
-import Home from "../pages/home/Home";
-// import About from "../pages/about/About";
-// import Blogs from "../pages/blogs/Blogs";
-// import SignIn from "../pages/signin/SignIn";
-// import SignUp from "../pages/signUp/SignUp";
-// import PrivateRoutes from "./PrivateRoutes";
-// import Profile from "../pages/profile/Profile";
-// import News from "../pages/news/News";
+import News from "../pages/news/News";
+import Blogs from "../pages/blog/blogs";
+import Destination from "../pages/destination/destination";
+import Contact from "../pages/contact/Contact";
 
 const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
-        children: [
-            { index: true, Component: Home },
-            // { path: '/signin', Component: SignIn },
-            // { path: '/signup', Component: SignUp },
-            // { path: '/about', Component: About },
-            // { path: '/blogs', Component: Blogs },
 
-            // private routes 
-            
-            // {
-            //     path: '/profile',
-            //     element:
-            //         <PrivateRoutes>
-            //             <Profile />
-            //         </PrivateRoutes>
-            // },
-            // {
-            //     path: '/news',
-            //     element:
-            //         <PrivateRoutes>
-            //             <News />
-            //         </PrivateRoutes>
-            // },
-        ]
+//  path: '/about', Component: About },
+
+        // private routes 
+
+        // {
+        //     path: '/profile',
+        //     element:
+        //         <PrivateRoutes>
+        //             <Profile />
+        //         </PrivateRoutes>
+        // },
+        // {
+        //     path: '/news',
+        //     element:
+        //         <PrivateRoutes>
+        //             <News />
+        //         </PrivateRoutes>
+        // },
+
     },
+    { path: '/news', Component: News },
+    { path: '/destination', Component: Destination },
+    { path: '/blogs', Component: Blogs },
+    { path: '/contact', Component: Contact },
 ]);
 
 export default router;

@@ -8,3 +8,14 @@
   }
  
    */
+
+.background-img {
+  background: url('/bg-img.png'),rgb(196, 196, 196);
+  opacity: 5% black;
+
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+
+
+}

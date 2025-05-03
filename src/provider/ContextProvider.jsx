@@ -26,7 +26,6 @@ const ContextProvider = ({ children }) => {
     // keep it in this website like local storage after reload pages it will not go anywhere
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log('inside useEffect on auth state change', currentUser)
             setUser(currentUser)
             setLoading(false)
         })
