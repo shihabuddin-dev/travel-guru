@@ -11,7 +11,7 @@ const Navbar = () => {
     const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
     const links = <>
-        <NavLink to='/news' className="hover:text-yellow-400">News</NavLink>
+        <a href='https://the-dragon-news-2443b.web.app/' className="hover:text-yellow-400">News</a>
         <NavLink to='/destination' className="hover:text-yellow-400">Destination</NavLink>
         <NavLink to='/blogs' className="hover:text-yellow-400">Blogs</NavLink>
         <NavLink to='/contact' className="hover:text-yellow-400">Contact</NavLink>
