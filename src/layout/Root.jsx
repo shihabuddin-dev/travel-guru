@@ -1,14 +1,14 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router';
-import Header from '../components/Header';
 
 const Root = () => {
     return (
         <>
         <header>
-         <Header/>
+          <Navbar/>
         </header>
-          <div className='w-11/12 mx-auto px-4'>
+          <div>
           <Outlet />
           </div>
         </>

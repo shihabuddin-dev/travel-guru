@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from '../assets/logo.png'
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import Button from "./Button";
 
 const Navbar = () => {
+    const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
     const links = <>
         <NavLink to='/news' className="hover:text-yellow-400">News</NavLink>
@@ -14,11 +15,11 @@ const Navbar = () => {
     </>
 
     return (
-        <nav className="w-full text-white">
+        <nav className="w-full text-white bg-gray-900">
             <div className="container mx-auto px-4 md:px-8 lg:px-12 py-3 flex items-center justify-center gap-36 md:gap-12">
                 {/* Logo */}
                 <div >
-                    <img src={logo} alt="Logo" className="w-24" />
+                    <img onClick={() => navigate('/')} src={logo} alt="Logo" className="w-24" />
                     {/* <span className="text-xl font-bold">Travel <span className="text-yellow-400">Guru</span></span> */}
                 </div>
 

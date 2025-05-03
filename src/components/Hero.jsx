@@ -6,7 +6,7 @@ import srimongol from '../assets/Sreemongol.png'
 
 const Hero = () => {
     return (
-        <div className='container mx-auto px-4 md:px-8 lg:px-12 mt-4 md:mt-12 flex flex-col md:flex-row items-center gap-6'>
+        <div className='container mx-auto px-4 md:px-8 lg:px-12 pt-4 md:pt-12 flex flex-col md:flex-row items-center gap-6'>
             <div className='text-white space-y-6 md:flex-1 text-center md:text-justify'>
                 <h3 className='text-3xl md:text-6xl font-semibold'>COX'S BAZAR</h3>
                 <p className='md:w-10/12'> Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach... </p>
