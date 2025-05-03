@@ -7,11 +7,13 @@ import Home from "../components/Home";
 import Login from "../pages/login/Login";
 import Booking from "../pages/booking/Booking";
 import Register from "../pages/register/Register";
+import ErrorPage from "../pages/errorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
+        errorElement: <ErrorPage/>,
         children: [
             { index: true, Component: Home },
             { path: '/destination', Component: Destination },
@@ -20,25 +22,14 @@ const router = createBrowserRouter([
             { path: '/login', Component: Login },
             { path: '/register', Component: Register },
             { path: '/booking', Component: Booking },
+           
         ]
         // private routes 
 
-        // {
-        //     path: '/profile',
-        //     element:
-        //         <PrivateRoutes>
-        //             <Profile />
-        //         </PrivateRoutes>
-        // },
-        // {
-        //     path: '/news',
-        //     element:
-        //         <PrivateRoutes>
-        //             <News />
-        //         </PrivateRoutes>
-        // },
-
+        
+        
     },
+   
 
 ]);
 

@@ -15,7 +15,9 @@ const Navbar = () => {
         <NavLink to='/destination' className="hover:text-yellow-400">Destination</NavLink>
         <NavLink to='/blogs' className="hover:text-yellow-400">Blogs</NavLink>
         <NavLink to='/contact' className="hover:text-yellow-400">Contact</NavLink>
+       {user && <NavLink to='/profile' className="hover:text-yellow-400">Profile</NavLink>}
     </>
+
 
     const handleLogout = () => {
         logOutUser()
