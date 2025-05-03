@@ -1,21 +1,15 @@
 @import "tailwindcss";
 
-/* a.active {
-    color: red;
+a.active {
+    color: #FFF500;
   }
   a.pending {
     color: blue;
   }
  
-   */
-
 .background-img {
-  background: url('/bg-img.png'),rgb(196, 196, 196);
-  opacity: 5% black;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/bg-img.png');
   background-position: center;
   background-size: cover;
-  height: 900px;
-
-
+  height: 585px;
 }

@@ -5,8 +5,10 @@ import Hero from './Hero';
 const Header = () => {
     return (
         <div className='background-img '>
-                <Navbar/>
-                <Hero/>
+               <div>
+               <Navbar/>
+               <Hero/>
+               </div>
         </div>
     );
 };
