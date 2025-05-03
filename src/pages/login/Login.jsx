@@ -41,7 +41,7 @@ const Login = () => {
                         error && <p className='text-sm text-red-500'>{error}</p>
                     }
                     <button type='submit' className="btn btn-neutral mt-4">Login</button>
-                    <p className='text-center mt-4'>Don't have an Account?<Link to='/register' className='link link-hover text-secondary'> Register</Link></p>
+                    <p className='text-center mt-4'>Don't have an Account?<Link to='/register' className='link link-hover text-yellow-400'> Register</Link></p>
                 </form>
             </div>
         </div>

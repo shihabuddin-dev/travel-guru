@@ -48,7 +48,7 @@ const Register = () => {
                     <label className="label font-semibold text-sm">Password</label>
                     <input name='password' type="password" className="input focus:outline-none focus:shadow-outline focus:border-2" placeholder="Enter Your Password" required />
                     <button type='submit' className="btn btn-neutral mt-4">Register</button>
-                    <p className='text-center mt-4'>Already have an Account? <Link to='/login' className='link link-hover text-secondary'> Login</Link> </p>
+                    <p className='text-center mt-4'>Already have an Account? <Link to='/login' className='link link-hover text-yellow-400'> Login</Link> </p>
                 </form>
             </div>
         </div>

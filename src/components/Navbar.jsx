@@ -72,7 +72,9 @@ const Navbar = () => {
                     <div className="grid gap-2">
                         {links}
                     </div>
-                    <Button label='login' />
+                    {
+                        user ? <Button onClick={handleLogout} label='Log Out' /> : <Link to='/login'><Button label='login' /></Link>
+                    }
                 </div>
             )}
         </nav>
