@@ -7,6 +7,7 @@ import Contact from "../pages/contact/Contact";
 import Home from "../components/Home";
 import Login from "../pages/login/Login";
 import Booking from "../pages/booking/Booking";
+import Register from "../pages/register/Register";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
             { path: '/blogs', Component: Blogs },
             { path: '/contact', Component: Contact },
             { path: '/login', Component: Login },
+            { path: '/register', Component: Register },
             { path: '/booking', Component: Booking },
         ]
         // private routes 

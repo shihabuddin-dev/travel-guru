@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from '../assets/logo.png'
 import { Link, NavLink, useNavigate } from "react-router";
 import Button from "./Button";
+import { FirebaseAuthContext } from "../provider/FirebaseAuthContext";
 
 const Navbar = () => {
+    const { user, logOutUser } = use(FirebaseAuthContext)
+
     const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
     const links = <>
@@ -13,6 +16,15 @@ const Navbar = () => {
         <NavLink to='/blogs' className="hover:text-yellow-400">Blogs</NavLink>
         <NavLink to='/contact' className="hover:text-yellow-400">Contact</NavLink>
     </>
+
+    const handleLogout = () => {
+        logOutUser()
+            .then(() => {
+            }).catch((error) => {
+                console.log(error)
+            });
+
+    }
 
     return (
         <nav className="w-full text-white bg-gray-900">
@@ -35,7 +47,10 @@ const Navbar = () => {
                 {/* Desktop Nav Links */}
                 <div className="hidden md:flex items-center gap-6">
                     {links}
-                    <Link to='/login'><Button label='login' /></Link>
+                    {
+                        user ? <Button onClick={handleLogout} label='Log Out' /> : <Link to='/login'><Button label='login' /></Link>
+                    }
+
                 </div>
 
                 {/* Hamburger Icon */}

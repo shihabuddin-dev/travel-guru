@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 a.active {
   color: #FFf900;
 }
