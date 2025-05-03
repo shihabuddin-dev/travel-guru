@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from '../assets/logo.png'
-import { NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import Button from "./Button";
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
                 {/* Desktop Nav Links */}
                 <div className="hidden md:flex items-center gap-6">
                     {links}
-                    <Button label='login' />
+                    <Link to='/login'><Button label='login' /></Link>
                 </div>
 
                 {/* Hamburger Icon */}

@@ -5,6 +5,8 @@ import Blogs from "../pages/blog/blogs";
 import Destination from "../pages/destination/destination";
 import Contact from "../pages/contact/Contact";
 import Home from "../components/Home";
+import Login from "../pages/login/Login";
+import Booking from "../pages/booking/Booking";
 
 const router = createBrowserRouter([
     {
@@ -16,10 +18,9 @@ const router = createBrowserRouter([
             { path: '/destination', Component: Destination },
             { path: '/blogs', Component: Blogs },
             { path: '/contact', Component: Contact },
+            { path: '/login', Component: Login },
+            { path: '/booking', Component: Booking },
         ]
-
-        //  path: '/about', Component: About },
-
         // private routes 
 
         // {
